@@ -600,22 +600,22 @@ const COURSE_SUBJECTS = [
     title: "《大数据技术与应用》",
     icon: "📊",
     type: "专业进阶选修课",
-    description: "涵盖《大数据技术与应用》平时练习题与期末复习题库Word文档（Hadoop、Spark、HBase等考点）。",
+    description: "涵盖《大数据技术与应用》平时练习题与期末复习题库PDF文档（Hadoop、Spark、HBase等考点）。",
     papers: [
       {
         id: "bd-001",
-        title: "《大数据技术与应用》平时练习题与期末复习题库",
-        tag: "练习题库",
+        title: "练习题.pdf",
+        tag: "PDF源文件",
         year: "大数据技术",
-        fileType: "doc",
-        fileSize: "438 KB",
-        description: "涵盖Hadoop分布式架构、MapReduce编程模型、HDFS工作原理、Spark生态等高频练习题与答案。",
+        fileType: "pdf",
+        fileSize: "412 KB",
+        description: "源文件：练习题.pdf。涵盖Hadoop分布式架构、MapReduce编程模型、HDFS工作原理、Spark生态等平时练习题与期末复习题库。",
         contributor: "浙海大学子",
         updateTime: "2024-01-10",
-        localUrl: "js/Subjects-Resources/大数据技术与应用/练习题.doc",
+        localUrl: "js/Subjects-Resources/大数据技术与应用/练习题.pdf",
         links: [
-          { platform: "本地 DOC 下载", url: "js/Subjects-Resources/大数据技术与应用/练习题.doc", isDirect: true },
-          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Subjects-Resources/大数据技术与应用/练习题.doc", isDirect: true }
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Subjects-Resources/大数据技术与应用/练习题.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Subjects-Resources/大数据技术与应用/练习题.pdf", isDirect: true }
         ]
       }
     ]
