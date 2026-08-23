@@ -3726,9 +3726,10 @@ select.form-control:focus::-ms-value {
   color: var(--text-normal, hsl(0, 0%, 25%));
 }
 </style>
-  <link rel="stylesheet" href="https://static.pintia.cn/assets/paper-tailwind.css">
-  <link rel="stylesheet" href="https://static.pintia.cn/assets/katex.min.css">
-  <link rel="stylesheet" href="https://static.pintia.cn/assets/fonts.css">
+  <!-- 本地与高可用 CDN 试卷样式 (完美还原 PTA 官方排版) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <link rel="stylesheet" href="../../css/pta-paper.css">
+  <link rel="stylesheet" href="./paper.css">
 </head>
 <body>
 
