@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>浙江海洋大学 (ZJOU) - 课程与期末考试资料共享站</title>
+  <meta name="description" content="浙江海洋大学课程与期末复习资料共享平台：包含往年期末试卷与课程资料（实验报告、大作业、课件）两大核心分类。">
+  
+  <!-- 网站图标 -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
+  
+  <!-- 样式文件 -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= 顶部导航 ================= -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand-logo">
+        <span class="brand-icon">🌊</span>
+        <span class="brand-title">浙江海洋大学资料共享站</span>
+      </div>
+
+      <div class="nav-actions">
+        <a href="https://github.com/AuRoRa-TH/ZJOU-Hub" target="_blank" rel="noopener noreferrer" class="upload-nav-tip" title="前往 GitHub 仓库上传资料">
+          <span>📤 上传资料点此</span>
+          <span style="color: var(--ocean-primary); font-weight: bold;">➔</span>
+        </a>
+        <a href="https://github.com/AuRoRa-TH/ZJOU-Hub" target="_blank" rel="noopener noreferrer" class="github-link-btn" title="访问 GitHub 仓库 (AuRoRa-TH/ZJOU-Hub)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 核心主体内容 ================= -->
+  <main class="container">
+
+    <!-- 首页 Hero 区域（嵌入用户上传的浙海大海报） -->
+    <section class="hero-section">
+      <div class="hero-banner-card">
+        <!-- 海报图片容器 -->
+        <div class="hero-poster-container">
+          <img 
+            id="heroPosterImg" 
+            src="js/icon/Poster.png" 
+            alt="浙江海洋大学" 
+            class="hero-poster-img"
+          >
+        </div>
+
+        <!-- 标语与介绍 -->
+        <div class="hero-info-content">
+          <div class="hero-badge">🎓 浙江海洋大学 · 学习资源库</div>
+          <h1 class="hero-main-title">课程与期末复习资料</h1>
+          <div class="hero-motto">“海纳百川 自强不息 向海图强 开拓未来”</div>
+          <p class="hero-desc">
+            面向浙海大学子打造的轻量级资料库，专注提供<strong>往年期末试卷</strong>、<strong>课程资料</strong>与<strong>优秀学长案例</strong>。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 三大核心分类大按钮切换栏 ================= -->
+    <section class="main-categories-section">
+      <div class="big-category-tabs">
+        <!-- 分类1: 往年期末试卷 (点击跳转) -->
+        <a href="exams.html" class="big-cat-btn" id="tabExamBtn">
+          <div class="big-cat-icon">📑</div>
+          <div>
+            <div class="big-cat-title">1. 往年期末试卷</div>
+            <div class="big-cat-subtitle">历年统考真题 · 模拟试卷 · 复习提纲 · 考点归纳</div>
+          </div>
+        </a>
+
+        <!-- 分类2: 课程资料 (点击跳转) -->
+        <a href="courses.html" class="big-cat-btn" id="tabCourseBtn">
+          <div class="big-cat-icon">📦</div>
+          <div>
+            <div class="big-cat-title">2. 课程资料</div>
+            <div class="big-cat-subtitle">实验报告范本 · 大作业/课设 · 课件讲义 · 参考源码</div>
+          </div>
+        </a>
+
+        <!-- 分类3: 优秀学长案例 (点击跳转) -->
+        <a href="seniors.html" class="big-cat-btn" id="tabSeniorBtn">
+          <div class="big-cat-icon">🌟</div>
+          <div>
+            <div class="big-cat-title">3. 优秀学长案例</div>
+            <div class="big-cat-subtitle">竞赛获奖作品 · 升学就业经验 · 优秀毕业设计 · 创新项目</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= Toast 容器 ================= -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- ================= 简约页脚 ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-motto">海纳百川 自强不息 向海图强 开拓未来</div>
+      <p>© 浙江海洋大学 (ZJOU) 学习资料共享站</p>
+    </div>
+  </footer>
+
+  <!-- 脚本加载 -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

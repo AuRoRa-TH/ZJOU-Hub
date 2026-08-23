@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>往年期末试卷科目汇总 - 浙江海洋大学资料共享站</title>
+  <meta name="description" content="浙江海洋大学往年期末考试卷科目列表：高等数学、线性代数等。">
+  
+  <!-- 图标 -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📑</text></svg>">
+  
+  <!-- 样式文件 -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= 顶部导航 ================= -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo" title="返回首页">
+        <span class="brand-icon">🌊</span>
+        <span class="brand-title">浙江海洋大学资料共享站</span>
+      </a>
+
+      <div class="nav-actions">
+        <a href="https://github.com/AuRoRa-TH/ZJOU-Hub" target="_blank" rel="noopener noreferrer" class="upload-nav-tip" title="前往 GitHub 仓库上传资料">
+          <span>📤 上传资料点此</span>
+          <span style="color: var(--ocean-primary); font-weight: bold;">➔</span>
+        </a>
+        <a href="https://github.com/AuRoRa-TH/ZJOU-Hub" target="_blank" rel="noopener noreferrer" class="github-link-btn" title="访问 GitHub 仓库 (AuRoRa-TH/ZJOU-Hub)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 主体内容 ================= -->
+  <main class="container">
+    
+    <!-- 顶部面包屑与标题栏 (居中排版) -->
+    <div class="page-top-bar">
+      <a href="index.html" class="btn-back">← 返回首页</a>
+      <div class="breadcrumb-row">
+        <a href="index.html" class="breadcrumb-item">🏠 首页</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">📑 往年期末试卷</span>
+      </div>
+    </div>
+
+    <div class="page-header-box">
+      <div class="page-badge">📚 往年期末考试试卷库</div>
+      <h1 class="page-main-title">科目列表</h1>
+      <p class="page-main-desc">点击下方任意科目模块，即可进入该科目的专属往年期末考试试卷与备考资料专区。</p>
+    </div>
+
+    <!-- ================= 科目列表搜索栏 ================= -->
+    <div class="subject-search-container">
+      <div class="subject-search-box-wrap">
+        <div class="subject-search-box">
+          <span class="search-box-icon">🔍</span>
+          <input 
+            type="text" 
+            id="examsSearchInput" 
+            class="subject-search-input" 
+            placeholder="搜索科目名称（如: 高数、线代、大物、计组、数据库、数据结构）..."
+            autocomplete="off"
+          >
+          <button id="searchClearBtn" class="subject-search-clear" style="display: none;" title="清空搜索">✕</button>
+          <button id="searchSubmitBtn" class="subject-search-submit-btn">
+            <span>搜索 / 提交</span>
+          </button>
+        </div>
+
+        <!-- 实时智能联想提示下拉面板 -->
+        <div id="searchSuggestDropdown" class="search-suggest-dropdown"></div>
+      </div>
+    </div>
+
+    <!-- ================= 从上至下依次罗列的科目模块列表 ================= -->
+    <section class="subjects-list-container" id="subjectsListContainer">
+      <!-- 由 JS 动态渲染 -->
+    </section>
+
+  </main>
+
+  <!-- ================= Toast 容器 ================= -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- ================= 页脚 ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-motto">海纳百川 自强不息 向海图强 开拓未来</div>
+      <p>© 浙江海洋大学 (ZJOU) 学习资料共享站</p>
+    </div>
+  </footer>
+
+  <!-- 数据源与渲染脚本 -->
+  <script src="js/data.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      renderSubjects(EXAM_SUBJECTS || []);
+      initExamsSearch();
+    });
+
+    // 渲染科目卡片列表
+    function renderSubjects(subjects) {
+      const container = document.getElementById('subjectsListContainer');
+      if (!container) return;
+
+      if (subjects.length === 0) {
+        container.innerHTML = `
+          <div style="text-align: center; padding: 60px 20px; background: var(--bg-surface); border-radius: var(--radius-md); border: 1px dashed var(--border-color);">
+            <div style="font-size: 2.2rem; margin-bottom: 8px;">📭</div>
+            <p style="color: var(--text-muted); font-size: 1rem; font-weight: 600;">当前还没有相关科目资料</p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = subjects.map((subject, index) => {
+        return `
+          <div class="subject-card-module" id="subject-card-${subject.id}" onclick="location.href='exam-subject.html?id=${subject.id}'" title="点击进入《${subject.name}》期末试卷库">
+            <div class="subject-card-left">
+              <div class="subject-icon-box">${subject.icon || '📑'}</div>
+              <div class="subject-card-content">
+                <div class="subject-tags-row">
+                  <span class="subject-num-badge">#${index + 1}</span>
+                  <span class="badge-tag-sm type">${subject.type}</span>
+                </div>
+                <h2 class="subject-card-title">${subject.title}</h2>
+                <p class="subject-card-desc">${subject.description}</p>
+              </div>
+            </div>
+
+            <div class="subject-card-right">
+              <span class="subject-papers-count">已收录 ${subject.papers ? subject.papers.length : 0} 份资料</span>
+              <a href="exam-subject.html?id=${subject.id}" class="btn-subject-enter" onclick="event.stopPropagation();">
+                <span>进入试卷库</span> ➔
+              </a>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // ================= 搜索与智能联想提示 =================
+    function initExamsSearch() {
+      const searchInput = document.getElementById('examsSearchInput');
+      const searchClearBtn = document.getElementById('searchClearBtn');
+      const searchSubmitBtn = document.getElementById('searchSubmitBtn');
+      const dropdown = document.getElementById('searchSuggestDropdown');
+
+      if (!searchInput || !dropdown) return;
+
+      // 输入事件
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.trim();
+        searchClearBtn.style.display = query ? 'block' : 'none';
+
+        if (!query) {
+          dropdown.classList.remove('active');
+          dropdown.innerHTML = '';
+          return;
+        }
+
+        const matches = searchSubjects(query);
+
+        if (matches.length > 0) {
+          dropdown.innerHTML = `
+            <div class="suggest-header">💡 找到 ${matches.length} 个匹配科目（点击立即定位）：</div>
+            ${matches.map(subject => `
+              <div class="suggest-item" onclick="scrollToSubject('${subject.id}')">
+                <div class="suggest-item-left">
+                  <span style="font-size: 1.2rem;">${subject.icon || '📑'}</span>
+                  <span class="suggest-title">${highlightKeyword(subject.title, query)}</span>
+                </div>
+                <span class="suggest-year">${subject.papers ? subject.papers.length : 0} 份试卷</span>
+              </div>
+            `).join('')}
+          `;
+          dropdown.classList.add('active');
+        } else {
+          dropdown.innerHTML = `
+            <div class="suggest-empty">
+              <span style="font-size: 1.3rem;">📭</span> 当前还没有包含 “<b>${escapeHtml(query)}</b>” 的科目
+            </div>
+          `;
+          dropdown.classList.add('active');
+        }
+      });
+
+      // 清空按钮
+      searchClearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        searchClearBtn.style.display = 'none';
+        dropdown.classList.remove('active');
+        dropdown.innerHTML = '';
+        searchInput.focus();
+      });
+
+      // 提交/搜索按钮
+      const doSubmitSearch = () => {
+        const query = searchInput.value.trim();
+        if (!query) {
+          showToast('请输入要查找的科目名称');
+          searchInput.focus();
+          return;
+        }
+
+        const matches = searchSubjects(query);
+        dropdown.classList.remove('active');
+
+        if (matches.length > 0) {
+          scrollToSubject(matches[0].id);
+          showToast(`已定位至：${matches[0].title}`);
+        } else {
+          showToast(`当前还没有包含“${query}”的科目资料`);
+        }
+      };
+
+      searchSubmitBtn.addEventListener('click', doSubmitSearch);
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          doSubmitSearch();
+        }
+      });
+
+      // 点击外部关闭下拉框
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.subject-search-box-wrap')) {
+          dropdown.classList.remove('active');
+        }
+      });
+    }
+
+    // 匹配科目
+    function searchSubjects(query) {
+      if (!EXAM_SUBJECTS) return [];
+      const q = query.toLowerCase();
+      return EXAM_SUBJECTS.filter(s => {
+        return (
+          s.name.toLowerCase().includes(q) ||
+          s.title.toLowerCase().includes(q) ||
+          (s.college && s.college.toLowerCase().includes(q)) ||
+          (s.description && s.description.toLowerCase().includes(q)) ||
+          (s.type && s.type.toLowerCase().includes(q))
+        );
+      });
+    }
+
+    // 平滑滚动并高亮定位科目模块卡片
+    function scrollToSubject(subjectId) {
+      const dropdown = document.getElementById('searchSuggestDropdown');
+      if (dropdown) dropdown.classList.remove('active');
+
+      const card = document.getElementById(`subject-card-${subjectId}`);
+      if (!card) return;
+
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      
+      // 触发高亮闪烁
+      card.classList.remove('card-highlight-flash');
+      void card.offsetWidth;
+      card.classList.add('card-highlight-flash');
+
+      setTimeout(() => {
+        card.classList.remove('card-highlight-flash');
+      }, 2600);
+    }
+
+    function highlightKeyword(text, keyword) {
+      if (!keyword) return escapeHtml(text);
+      const escaped = escapeRegex(keyword);
+      const reg = new RegExp(`(${escaped})`, 'gi');
+      return escapeHtml(text).replace(reg, '<span class="suggest-highlight">$1</span>');
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function escapeRegex(str) {
+      return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function showToast(msg) {
+      const container = document.getElementById('toastContainer');
+      if (!container) return;
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      toast.textContent = msg;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.remove();
+      }, 2200);
+    }
+  </script>
+</body>
+</html>

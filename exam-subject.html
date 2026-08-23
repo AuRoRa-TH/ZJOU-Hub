@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>科目期末试卷详情 - 浙江海洋大学资料共享站</title>
+  
+  <!-- 图标 -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📑</text></svg>">
+  
+  <!-- 样式文件 -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= 顶部导航 ================= -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo" title="返回首页">
+        <span class="brand-icon">🌊</span>
+        <span class="brand-title">浙江海洋大学资料共享站</span>
+      </a>
+
+      <div class="nav-actions">
+        <a href="https://github.com/AuRoRa-TH/ZJOU-Hub" target="_blank" rel="noopener noreferrer" class="upload-nav-tip" title="前往 GitHub 仓库上传资料">
+          <span>📤 上传资料点此</span>
+          <span style="color: var(--ocean-primary); font-weight: bold;">➔</span>
+        </a>
+        <a href="https://github.com/AuRoRa-TH/ZJOU-Hub" target="_blank" rel="noopener noreferrer" class="github-link-btn" title="访问 GitHub 仓库 (AuRoRa-TH/ZJOU-Hub)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 主体内容 ================= -->
+  <main class="container">
+    
+    <!-- 顶部面包屑导航与返回按钮 (居中排版) -->
+    <div class="page-top-bar">
+      <a href="exams.html" class="btn-back">← 返回科目列表</a>
+      <div class="breadcrumb-row">
+        <a href="index.html" class="breadcrumb-item">🏠 首页</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="exams.html" class="breadcrumb-item">📑 往年期末试卷</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current" id="breadcrumbSubjectName">科目详情</span>
+      </div>
+    </div>
+
+    <!-- 科目主信息卡片 -->
+    <div class="subject-header-banner" id="subjectHeaderBanner">
+      <!-- 由 JS 动态渲染 -->
+    </div>
+
+    <!-- ================= 科目内部试卷快速搜索栏 ================= -->
+    <div class="subject-search-container">
+      <div class="subject-search-box-wrap">
+        <div class="subject-search-box">
+          <span class="search-box-icon">🔍</span>
+          <input 
+            type="text" 
+            id="subjectSearchInput" 
+            class="subject-search-input" 
+            placeholder="搜索试卷年份、专业班级（如: 2023、计算机、A卷、电信、真题）..."
+            autocomplete="off"
+          >
+          <button id="searchClearBtn" class="subject-search-clear" style="display: none;" title="清空搜索">✕</button>
+          <button id="searchSubmitBtn" class="subject-search-submit-btn">
+            <span>搜索 / 提交</span>
+          </button>
+        </div>
+
+        <!-- 实时智能联想提示下拉面板 -->
+        <div id="searchSuggestDropdown" class="search-suggest-dropdown"></div>
+      </div>
+    </div>
+
+    <!-- ================= 从上到下依次给出具体期末试卷列表 ================= -->
+    <div class="papers-list-header">
+      <h3 class="papers-list-title">📥 试卷与复习资料列表</h3>
+      <span class="papers-list-count" id="papersListCount">共 0 份资料</span>
+    </div>
+
+    <section class="papers-vertical-list" id="papersVerticalList">
+      <!-- 由 JS 动态渲染 -->
+    </section>
+
+  </main>
+
+  <!-- ================= 详情下载弹窗 ================= -->
+  <div id="detailModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h3 class="modal-title" id="modalTitle">资料详情与下载</h3>
+        <span class="modal-close" onclick="closeModal()">✕</span>
+      </div>
+
+      <div id="modalBody">
+        <!-- 动态注入 -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Toast 容器 ================= -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- ================= 页脚 ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-motto">海纳百川 自强不息 向海图强 开拓未来</div>
+      <p>© 浙江海洋大学 (ZJOU) 学习资料共享站</p>
+    </div>
+  </footer>
+
+  <!-- 数据源与渲染脚本 -->
+  <script src="js/data.js"></script>
+  <script>
+    let currentSubject = null;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const subjectId = urlParams.get('id') || 'math';
+
+      currentSubject = EXAM_SUBJECTS.find(s => s.id === subjectId) || EXAM_SUBJECTS[0];
+
+      if (!currentSubject) {
+        document.getElementById('subjectHeaderBanner').innerHTML = `
+          <div style="text-align: center; padding: 40px;">未找到该科目信息，<a href="exams.html" style="color: var(--ocean-primary);">点击返回科目列表</a></div>
+        `;
+        return;
+      }
+
+      // 更新网页标题与面包屑
+      document.title = `${currentSubject.title} - 浙江海洋大学资料共享站`;
+      document.getElementById('breadcrumbSubjectName').textContent = currentSubject.name;
+
+      // 渲染科目头部信息
+      document.getElementById('subjectHeaderBanner').innerHTML = `
+        <div class="subject-banner-left">
+          <div class="subject-banner-icon">${currentSubject.icon || '📑'}</div>
+          <div>
+            <div class="subject-banner-badges">
+              <span class="badge-tag-sm type">${currentSubject.type}</span>
+            </div>
+            <h1 class="subject-banner-title">${currentSubject.title}</h1>
+            <p class="subject-banner-desc">${currentSubject.description}</p>
+          </div>
+        </div>
+      `;
+
+      // 渲染该科目的所有试卷资料
+      renderPapersList(currentSubject.papers || []);
+
+      // 绑定搜索与联想提示事件
+      initSubjectSearch();
+    });
+
+    // 渲染试卷列表
+    function renderPapersList(papers) {
+      document.getElementById('papersListCount').textContent = `共 ${papers.length} 份资料`;
+
+      const listContainer = document.getElementById('papersVerticalList');
+      if (papers.length === 0) {
+        listContainer.innerHTML = `
+          <div style="text-align: center; padding: 60px 20px; background: var(--bg-surface); border-radius: var(--radius-md); border: 1px dashed var(--border-color);">
+            <div style="font-size: 2.2rem; margin-bottom: 8px;">📭</div>
+            <p style="color: var(--text-muted); font-size: 1rem; font-weight: 600;">当前还没有相关试卷资料</p>
+          </div>
+        `;
+        return;
+      }
+
+      listContainer.innerHTML = papers.map((paper, index) => {
+        const primaryLink = paper.links && paper.links[0] ? paper.links[0] : {};
+        const hasCode = !!primaryLink.code;
+
+        const isPdf = (paper.fileType || '').toLowerCase() === 'pdf';
+        const isHtml = (paper.fileType || '').toLowerCase() === 'html';
+        const openText = isPdf ? '📄 查阅 PDF 原件' : (isHtml ? '🌐 在线打开真题网页' : '📥 下载源文件');
+
+        return `
+          <div class="paper-item-module" id="paper-${paper.id}" onclick="openPaperDirect('${paper.id}')" title="点击直接查阅此试卷原件">
+            <div class="paper-item-top">
+              <div class="paper-item-badges">
+                <span class="paper-index-badge">第 ${index + 1} 项</span>
+                <span class="badge-tag exam">${paper.tag}</span>
+                <span class="filetype-text">${paper.fileType.toUpperCase()} · ${paper.fileSize}</span>
+              </div>
+              <span class="paper-item-year">📅 ${paper.year}年统考</span>
+            </div>
+
+            <h3 class="paper-item-title">${paper.title}</h3>
+            <p class="paper-item-desc">${paper.description}</p>
+
+            <div class="paper-item-footer">
+              <div class="paper-meta-info">
+                <span>👤 贡献者: ${paper.contributor}</span>
+                <span>🕒 更新: ${paper.updateTime}</span>
+              </div>
+              <div class="paper-action-btns">
+                ${paper.localUrl ? `
+                  <a href="${encodeURI(paper.localUrl)}" target="_blank" class="btn-download" style="background: #0284c7;" onclick="event.stopPropagation();" title="直接在浏览器中打开此试卷">
+                    ${openText}
+                  </a>
+                ` : ''}
+                ${hasCode ? `
+                  <button class="btn-copy-code" onclick="copyCode('${primaryLink.code}', event)">
+                    🔑 提取码: ${primaryLink.code}
+                  </button>
+                ` : ''}
+                <button class="btn-download" onclick="openPaperModal('${paper.id}', event)">
+                  <span>下载通道</span> ➔
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // ================= 搜索与智能提示联想 =================
+    function initSubjectSearch() {
+      const searchInput = document.getElementById('subjectSearchInput');
+      const searchClearBtn = document.getElementById('searchClearBtn');
+      const searchSubmitBtn = document.getElementById('searchSubmitBtn');
+      const dropdown = document.getElementById('searchSuggestDropdown');
+
+      if (!searchInput || !dropdown) return;
+
+      // 输入监听
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.trim();
+        searchClearBtn.style.display = query ? 'block' : 'none';
+
+        if (!query) {
+          dropdown.classList.remove('active');
+          dropdown.innerHTML = '';
+          return;
+        }
+
+        const matches = searchPapers(query);
+
+        if (matches.length > 0) {
+          dropdown.innerHTML = `
+            <div class="suggest-header">💡 找到 ${matches.length} 份匹配试卷（点击立即定位）：</div>
+            ${matches.map(paper => `
+              <div class="suggest-item" onclick="scrollToPaper('${paper.id}')">
+                <div class="suggest-item-left">
+                  <span class="suggest-badge">${paper.tag}</span>
+                  <span class="suggest-title">${highlightKeyword(paper.title, query)}</span>
+                </div>
+                <span class="suggest-year">${paper.year}</span>
+              </div>
+            `).join('')}
+          `;
+          dropdown.classList.add('active');
+        } else {
+          dropdown.innerHTML = `
+            <div class="suggest-empty">
+              <span style="font-size: 1.3rem;">📭</span> 当前还没有包含 “<b>${escapeHtml(query)}</b>” 的试卷资料
+            </div>
+          `;
+          dropdown.classList.add('active');
+        }
+      });
+
+      // 清空按钮
+      searchClearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        searchClearBtn.style.display = 'none';
+        dropdown.classList.remove('active');
+        dropdown.innerHTML = '';
+        searchInput.focus();
+      });
+
+      // 提交/搜索按钮
+      const doSubmitSearch = () => {
+        const query = searchInput.value.trim();
+        if (!query) {
+          showToast('请输入要查找的试卷关键词');
+          searchInput.focus();
+          return;
+        }
+
+        const matches = searchPapers(query);
+        dropdown.classList.remove('active');
+
+        if (matches.length > 0) {
+          scrollToPaper(matches[0].id);
+          showToast(`已定位至：${matches[0].title}`);
+        } else {
+          showToast(`当前还没有包含“${query}”的资料`);
+        }
+      };
+
+      searchSubmitBtn.addEventListener('click', doSubmitSearch);
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          doSubmitSearch();
+        }
+      });
+
+      // 点击外部关闭下拉框
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.subject-search-box-wrap')) {
+          dropdown.classList.remove('active');
+        }
+      });
+    }
+
+    // 检索试卷
+    function searchPapers(query) {
+      if (!currentSubject || !currentSubject.papers) return [];
+      const q = query.toLowerCase();
+      return currentSubject.papers.filter(p => {
+        return (
+          p.title.toLowerCase().includes(q) ||
+          (p.description && p.description.toLowerCase().includes(q)) ||
+          (p.year && p.year.toLowerCase().includes(q)) ||
+          (p.tag && p.tag.toLowerCase().includes(q))
+        );
+      });
+    }
+
+    // 平滑滚动并高亮定位试卷卡片
+    function scrollToPaper(paperId) {
+      const dropdown = document.getElementById('searchSuggestDropdown');
+      if (dropdown) dropdown.classList.remove('active');
+
+      const card = document.getElementById(`paper-${paperId}`);
+      if (!card) return;
+
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      
+      // 移除再添加以重新触发高亮闪烁
+      card.classList.remove('card-highlight-flash');
+      void card.offsetWidth; // 触发 reflow
+      card.classList.add('card-highlight-flash');
+
+      setTimeout(() => {
+        card.classList.remove('card-highlight-flash');
+      }, 2600);
+    }
+
+    // 高亮关键词
+    function highlightKeyword(text, keyword) {
+      if (!keyword) return escapeHtml(text);
+      const escaped = escapeRegex(keyword);
+      const reg = new RegExp(`(${escaped})`, 'gi');
+      return escapeHtml(text).replace(reg, '<span class="suggest-highlight">$1</span>');
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function escapeRegex(str) {
+      return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    // ================= 直接查阅 PDF 与弹窗下载 =================
+    function openPaperDirect(paperId) {
+      if (!currentSubject || !currentSubject.papers) return;
+      const paper = currentSubject.papers.find(p => p.id === paperId);
+      if (!paper) return;
+
+      const targetUrl = paper.localUrl || (paper.links && paper.links[0] ? paper.links[0].url : null);
+      if (targetUrl) {
+        window.open(encodeURI(targetUrl), '_blank');
+      } else {
+        openPaperModal(paperId);
+      }
+    }
+
+    function openPaperModal(paperId, event) {
+      if (event) event.stopPropagation();
+      if (!currentSubject || !currentSubject.papers) return;
+      const paper = currentSubject.papers.find(p => p.id === paperId);
+      if (!paper) return;
+
+      document.getElementById('modalTitle').textContent = paper.title;
+      document.getElementById('modalBody').innerHTML = `
+        <div style="font-size: 0.9rem; color: var(--text-body); margin-bottom: 16px; background: var(--bg-subtle); padding: 12px; border-radius: var(--radius-sm);">
+          <p style="margin-bottom: 4px;"><strong>所属科目：</strong>${currentSubject.name}</p>
+          <p style="margin-bottom: 4px;"><strong>资料分类：</strong>${paper.tag} · ${paper.year}年 · ${paper.fileType.toUpperCase()} (${paper.fileSize})</p>
+          <p><strong>内容简介：</strong>${paper.description}</p>
+        </div>
+
+        <div style="font-weight: 700; font-size: 0.95rem; margin-bottom: 10px; color: var(--text-title);">
+          🚀 下载与查阅通道：
+        </div>
+
+        <div class="modal-links-list">
+          ${paper.links.map(link => `
+            <div class="modal-link-item">
+              <div>
+                <span class="link-name">${link.platform}</span>
+                ${link.code ? `<span class="link-code">提取码: <b>${link.code}</b></span>` : ''}
+              </div>
+              <div style="display: flex; gap: 8px;">
+                ${link.code ? `
+                  <button class="btn-copy-code" onclick="copyCode('${link.code}')">复制提取码</button>
+                ` : ''}
+                <a href="${encodeURI(link.url)}" target="_blank" rel="noopener noreferrer" class="btn-download" style="padding: 6px 14px; font-size: 0.84rem;">
+                  前往直达 ➔
+                </a>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+
+        <div style="font-size: 0.78rem; color: var(--text-muted); text-align: center; margin-top: 16px;">
+          声明：资料由学生自主开源分享，仅供复习交流使用。
+        </div>
+      `;
+
+      document.getElementById('detailModal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('detailModal').classList.remove('active');
+    }
+
+    function copyCode(code, event) {
+      if (event) event.stopPropagation();
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(code).then(() => {
+          showToast(`已复制提取码: ${code}`);
+        }).catch(() => fallbackCopy(code));
+      } else {
+        fallbackCopy(code);
+      }
+    }
+
+    function fallbackCopy(text) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      showToast(`已复制提取码: ${text}`);
+    }
+
+    function showToast(msg) {
+      const container = document.getElementById('toastContainer');
+      if (!container) return;
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      toast.textContent = msg;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.remove();
+      }, 2200);
+    }
+
+    window.addEventListener('click', (e) => {
+      const modal = document.getElementById('detailModal');
+      if (e.target === modal) closeModal();
+    });
+  </script>
+</body>
+</html>
