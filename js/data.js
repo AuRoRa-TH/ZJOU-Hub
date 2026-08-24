@@ -1510,6 +1510,37 @@ const SENIOR_SUBJECTS = [
         ]
       }
     ]
+  },
+  {
+    id: "hdu",
+    name: "考研上岸杭电",
+    title: "《考研上岸杭电》",
+    icon: "💻",
+    image: "js/Ivory Tower/考研上岸杭电/2339156516b3dea3362a506d873bd032.png",
+    type: "重点高校考研经验",
+    headline: "11408 一战 348 分成功上岸杭电",
+    quote: "数科之光！！！",
+    quoteSub: "浙海大学长考研上岸杭电高分经验分享！",
+    description: "数科之光！浙海大学长考研成功上岸杭州电子科技大学全流程高分经验分享与备考指南PDF。",
+    introMdUrl: "js/Ivory Tower/考研上岸杭电/简介.md",
+    papers: [
+      {
+        id: "hdu-001",
+        title: "浙海大学长考研上岸杭州电子科技大学全流程经验分享与备考指南",
+        tag: "考研经验",
+        year: "杭州电子科技大学",
+        fileType: "pdf",
+        fileSize: "800 KB",
+        description: "数科之光！涵盖考研初试全科复习时间线、专业课备考突破、心态调整与复试面试通关实战总结。",
+        contributor: "杭电上岸学长",
+        updateTime: "2024-04-20",
+        localUrl: "js/Ivory Tower/考研上岸杭电/考研经验分享.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Ivory Tower/考研上岸杭电/考研经验分享.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Ivory%20Tower/%E8%80%83%E7%A0%94%E4%B8%8A%E5%B2%B8%E6%9D%AD%E7%94%B5/%E8%80%83%E7%A0%94%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB.pdf", isDirect: true }
+        ]
+      }
+    ]
   }
 ];
 
