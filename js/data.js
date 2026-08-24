@@ -857,6 +857,99 @@ const EXAM_SUBJECTS = [
     ]
   },
   {
+    id: "phys-chem",
+    name: "物理化学",
+    title: "《物理化学》",
+    icon: "🌡️",
+    type: "基础化学必修课",
+    description: "按年份从新至旧整理的浙江海洋大学《物理化学B》历年期末统考A/B卷真题试卷及标准参考答案PDF原件合集（涵盖2022-2023、2020-2021学年）。",
+    papers: [
+      // ----------- 2022-2023 学年 -----------
+      {
+        id: "pc-2022-2023-ans-a",
+        title: "2022-2023学年《物理化学B》期末考试卷(A卷) 参考答案",
+        tag: "参考答案",
+        year: "2022-2023",
+        fileType: "pdf",
+        fileSize: "1.2 MB",
+        description: "浙江海洋大学2022-2023学年《物理化学B》期末统考真题试卷A卷标准参考答案与评分要点解析，涵盖热力学第一/第二定律、多组分系统、相平衡与化学平衡计算大题。",
+        contributor: "浙海大学子",
+        updateTime: "2023-01-10",
+        localUrl: "js/Exam-Resources/物理化学/2022-2023《物理化学B》考试卷（A）答案.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/物理化学/2022-2023《物理化学B》考试卷（A）答案.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/物理化学/2022-2023《物理化学B》考试卷（A）答案.pdf", isDirect: true }
+        ]
+      },
+      {
+        id: "pc-2022-2023-ans-b",
+        title: "2022-2023学年《物理化学B》期末考试卷(B卷) 参考答案",
+        tag: "参考答案",
+        year: "2022-2023",
+        fileType: "pdf",
+        fileSize: "978 KB",
+        description: "浙江海洋大学2022-2023学年《物理化学B》期末统考真题试卷B卷标准参考答案与评分要点解析。",
+        contributor: "浙海大学子",
+        updateTime: "2023-01-10",
+        localUrl: "js/Exam-Resources/物理化学/2022-2023《物理化学B》考试卷（B）答案.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/物理化学/2022-2023《物理化学B》考试卷（B）答案.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/物理化学/2022-2023《物理化学B》考试卷（B）答案.pdf", isDirect: true }
+        ]
+      },
+
+      // ----------- 2020-2021 学年 -----------
+      {
+        id: "pc-2020-2021-a",
+        title: "2020-2021学年《物理化学B》期末考试卷(A卷)",
+        tag: "期末真题",
+        year: "2020-2021",
+        fileType: "pdf",
+        fileSize: "307 KB",
+        description: "浙江海洋大学2020-2021学年《物理化学B》期末统考真题试卷A卷PDF原件，包含热力学函数计算、相图分析、电化学、动力学速率方程及界面化学大题。",
+        contributor: "浙海大学子",
+        updateTime: "2021-01-15",
+        localUrl: "js/Exam-Resources/物理化学/2020-2021《物理化学B》考试卷（A）.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/物理化学/2020-2021《物理化学B》考试卷（A）.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/物理化学/2020-2021《物理化学B》考试卷（A）.pdf", isDirect: true }
+        ]
+      },
+      {
+        id: "pc-2020-2021-ans-a",
+        title: "2020-2021学年《物理化学B》期末考试卷(A卷) 参考答案",
+        tag: "参考答案",
+        year: "2020-2021",
+        fileType: "pdf",
+        fileSize: "405 KB",
+        description: "浙江海洋大学2020-2021学年《物理化学B》期末考试卷A卷标准参考答案与大题计算步骤解析。",
+        contributor: "浙海大学子",
+        updateTime: "2021-01-15",
+        localUrl: "js/Exam-Resources/物理化学/2020-2021《物理化学B》考试卷（A）答案.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/物理化学/2020-2021《物理化学B》考试卷（A）答案.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/物理化学/2020-2021《物理化学B》考试卷（A）答案.pdf", isDirect: true }
+        ]
+      },
+      {
+        id: "pc-2020-2021-ans-b",
+        title: "2020-2021学年《物理化学B》期末考试卷(B卷) 参考答案",
+        tag: "参考答案",
+        year: "2020-2021",
+        fileType: "pdf",
+        fileSize: "427 KB",
+        description: "浙江海洋大学2020-2021学年《物理化学B》期末考试卷B卷标准参考答案与得分要点解析。",
+        contributor: "浙海大学子",
+        updateTime: "2021-01-15",
+        localUrl: "js/Exam-Resources/物理化学/2020-2021《物理化学B》考试卷（B）答案.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/物理化学/2020-2021《物理化学B》考试卷（B）答案.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/物理化学/2020-2021《物理化学B》考试卷（B）答案.pdf", isDirect: true }
+        ]
+      }
+    ]
+  },
+  {
     id: "aquatic-food",
     name: "水产食品学",
     title: "《水产食品学》",
@@ -1472,6 +1565,32 @@ const COURSE_SUBJECTS = [
         links: [
           { platform: "本地 PDF 原件直阅 / 下载", url: "js/Subjects-Resources/食品化学/食品化学.pdf", isDirect: true },
           { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Subjects-Resources/食品化学/食品化学.pdf", isDirect: true }
+        ]
+      }
+    ]
+  },
+  {
+    id: "food-safety",
+    name: "食品质量与安全",
+    title: "《食品质量与安全》",
+    icon: "🛡️",
+    type: "专业核心课程",
+    description: "涵盖《食品质量与安全》平时练习与期末精选习题册PDF（质量控制、食品安全标准、HACCP体系等）。",
+    papers: [
+      {
+        id: "food-safety-001",
+        title: "食品质量与安全精选习题（删减版）",
+        tag: "精选习题",
+        year: "食品质量与安全",
+        fileType: "pdf",
+        fileSize: "712 KB",
+        description: "源文件：食品质量与安全习题删减版（无答案）.pdf。涵盖食品安全风险评估、食品法律法规与标准、质量控制与溯源体系等重点考查题库。",
+        contributor: "浙海大学子",
+        updateTime: "2024-01-10",
+        localUrl: "js/Subjects-Resources/食品质量与安全/食品质量与安全习题删减版（无答案）.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Subjects-Resources/食品质量与安全/食品质量与安全习题删减版（无答案）.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Subjects-Resources/食品质量与安全/食品质量与安全习题删减版（无答案）.pdf", isDirect: true }
         ]
       }
     ]
