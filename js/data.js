@@ -547,6 +547,271 @@ const EXAM_SUBJECTS = [
         ]
       }
     ]
+  },
+  {
+    id: "food-eng",
+    name: "食品工程原理",
+    title: "《食品工程原理》",
+    icon: "⚙️",
+    type: "食品专业核心课",
+    description: "按年份从新至旧整理的浙江海洋大学《食品工程原理》历年期末统考试卷及标准参考答案PDF原件合集（涵盖2020-2021、2019-2020学年）。",
+    papers: [
+      // ----------- 2020-2021 学年 -----------
+      {
+        id: "fep-2020-2021-b",
+        title: "2020-2021学年《食品工程原理》期末考试卷(B卷)",
+        tag: "期末真题",
+        year: "2020-2021",
+        fileType: "pdf",
+        fileSize: "855 KB",
+        description: "浙江海洋大学2020-2021学年《食品工程原理》期末统考真题试卷B卷PDF原件，包含流体流动、传热、传质与分离单元操作计算及综合分析题。",
+        contributor: "浙海大学子",
+        updateTime: "2021-01-15",
+        localUrl: "js/Exam-Resources/食品工程原理/2020-2021《食品工程原理》考试卷B.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/食品工程原理/2020-2021《食品工程原理》考试卷B.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/食品工程原理/2020-2021《食品工程原理》考试卷B.pdf", isDirect: true }
+        ]
+      },
+      {
+        id: "fep-2020-2021-ans-a",
+        title: "2020-2021学年《食品工程原理》考试卷(A卷) 参考答案",
+        tag: "参考答案",
+        year: "2020-2021",
+        fileType: "pdf",
+        fileSize: "276 KB",
+        description: "浙江海洋大学2020-2021学年《食品工程原理》期末考试卷A卷标准参考答案与评分要点解析。",
+        contributor: "浙海大学子",
+        updateTime: "2021-01-15",
+        localUrl: "js/Exam-Resources/食品工程原理/2020-2021《食品工程原理》考试卷（A）答案.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/食品工程原理/2020-2021《食品工程原理》考试卷（A）答案.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/食品工程原理/2020-2021《食品工程原理》考试卷（A）答案.pdf", isDirect: true }
+        ]
+      },
+      {
+        id: "fep-2020-2021-ans-b",
+        title: "2020-2021学年《食品工程原理》考试卷(B卷) 参考答案",
+        tag: "参考答案",
+        year: "2020-2021",
+        fileType: "pdf",
+        fileSize: "210 KB",
+        description: "浙江海洋大学2020-2021学年《食品工程原理》期末考试卷B卷标准参考答案与各题解答步骤。",
+        contributor: "浙海大学子",
+        updateTime: "2021-01-15",
+        localUrl: "js/Exam-Resources/食品工程原理/2020-2021《食品工程原理》考试卷（B）答案.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/食品工程原理/2020-2021《食品工程原理》考试卷（B）答案.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/食品工程原理/2020-2021《食品工程原理》考试卷（B）答案.pdf", isDirect: true }
+        ]
+      },
+
+      // ----------- 2019-2020 学年 -----------
+      {
+        id: "fep-2019-2020-a",
+        title: "2019-2020学年《食品工程原理》期末考试卷(A卷)",
+        tag: "期末真题",
+        year: "2019-2020",
+        fileType: "pdf",
+        fileSize: "878 KB",
+        description: "浙江海洋大学2019-2020学年《食品工程原理》期末统考真题试卷A卷PDF原件。",
+        contributor: "浙海大学子",
+        updateTime: "2020-01-12",
+        localUrl: "js/Exam-Resources/食品工程原理/2019-2020《食品工程原理》考试卷A.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/食品工程原理/2019-2020《食品工程原理》考试卷A.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/食品工程原理/2019-2020《食品工程原理》考试卷A.pdf", isDirect: true }
+        ]
+      }
+    ]
+  },
+  {
+    id: "food-tech",
+    name: "食品工艺原理",
+    title: "《食品工艺原理》",
+    icon: "🥫",
+    type: "食品专业核心课",
+    description: "按年份与专业班级从新至旧整理的浙江海洋大学《食品工艺原理》历年期末统考A/B卷真题试卷及参考答案PDF原件合集（涵盖2022-2023、2021-2022、2019-2020学年）。",
+    papers: [
+      // ----------- 2022-2023 学年 -----------
+      {
+        id: "ft-2022-2023-a21-a",
+        title: "2022-2023学年《食品工艺原理》课程期末考试卷A（A21食工）",
+        tag: "期末真题",
+        year: "2022-2023",
+        fileType: "pdf",
+        fileSize: "240 KB",
+        description: "浙江海洋大学2022-2023学年《食品工艺原理》期末统考真题试卷A卷PDF原件，适用专业班级：A21食品科学与工程。",
+        contributor: "浙海大学子",
+        updateTime: "2023-01-10",
+        localUrl: "js/Exam-Resources/食品工艺原理/2022-2023 A21食工《食品工艺原理》课程期末考试卷A.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/食品工艺原理/2022-2023 A21食工《食品工艺原理》课程期末考试卷A.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/食品工艺原理/2022-2023 A21食工《食品工艺原理》课程期末考试卷A.pdf", isDirect: true }
+        ]
+      },
+      {
+        id: "ft-2022-2023-a21-a-alt",
+        title: "2022-2023学年 A21食工《食品工艺原理》期末考试卷A",
+        tag: "期末真题",
+        year: "2022-2023",
+        fileType: "pdf",
+        fileSize: "213 KB",
+        description: "浙江海洋大学2022-2023学年《食品工艺原理》期末考试真题试卷A卷原件，适用专业班级：A21食工。",
+        contributor: "浙海大学子",
+        updateTime: "2023-01-10",
+        localUrl: "js/Exam-Resources/食品工艺原理/2022-2023 A21 食工食品工艺原理期末考试卷A.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/食品工艺原理/2022-2023 A21 食工食品工艺原理期末考试卷A.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/食品工艺原理/2022-2023 A21 食工食品工艺原理期末考试卷A.pdf", isDirect: true }
+        ]
+      },
+
+      // ----------- 2021-2022 学年 -----------
+      {
+        id: "ft-2021-2022-a20-a",
+        title: "2021-2022学年《食品工艺原理》课程期末考试卷A（A20食工）",
+        tag: "期末真题",
+        year: "2021-2022",
+        fileType: "pdf",
+        fileSize: "218 KB",
+        description: "浙江海洋大学2021-2022学年《食品工艺原理》期末统考真题试卷A卷PDF原件，适用专业班级：A20食品科学与工程。",
+        contributor: "浙海大学子",
+        updateTime: "2022-01-12",
+        localUrl: "js/Exam-Resources/食品工艺原理/2021-2022 A20食工《食品工艺原理》课程期末考试卷A.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/食品工艺原理/2021-2022 A20食工《食品工艺原理》课程期末考试卷A.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/食品工艺原理/2021-2022 A20食工《食品工艺原理》课程期末考试卷A.pdf", isDirect: true }
+        ]
+      },
+      {
+        id: "ft-2021-2022-a20-b",
+        title: "2021-2022学年《食品工艺原理》课程期末考试卷B（A20食工）",
+        tag: "期末真题",
+        year: "2021-2022",
+        fileType: "pdf",
+        fileSize: "233 KB",
+        description: "浙江海洋大学2021-2022学年《食品工艺原理》期末统考真题试卷B卷PDF原件，适用专业班级：A20食品科学与工程。",
+        contributor: "浙海大学子",
+        updateTime: "2022-01-12",
+        localUrl: "js/Exam-Resources/食品工艺原理/2021-2022 A20食工《食品工艺原理》课程期末考试卷B.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/食品工艺原理/2021-2022 A20食工《食品工艺原理》课程期末考试卷B.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/食品工艺原理/2021-2022 A20食工《食品工艺原理》课程期末考试卷B.pdf", isDirect: true }
+        ]
+      },
+
+      // ----------- 2019-2020 学年 -----------
+      {
+        id: "ft-2019-2020-a18-a",
+        title: "2019-2020学年《食品工艺原理》期末考试卷A (修复清晰版)",
+        tag: "期末真题",
+        year: "2019-2020",
+        fileType: "pdf",
+        fileSize: "209 KB",
+        description: "浙江海洋大学2019-2020学年《食品工艺原理》期末统考真题试卷A卷高清修复版PDF原件，适用专业班级：A18食工。",
+        contributor: "浙海大学子",
+        updateTime: "2020-01-12",
+        localUrl: "js/Exam-Resources/食品工艺原理/2019-2020 A18食品工艺原理期末考试卷A (修复的).pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/食品工艺原理/2019-2020 A18食品工艺原理期末考试卷A (修复的).pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/食品工艺原理/2019-2020 A18食品工艺原理期末考试卷A (修复的).pdf", isDirect: true }
+        ]
+      },
+      {
+        id: "ft-2019-2020-a18-ans-a",
+        title: "2019-2020学年《食品工艺原理》期末考试卷A 参考答案（A18食工）",
+        tag: "参考答案",
+        year: "2019-2020",
+        fileType: "pdf",
+        fileSize: "224 KB",
+        description: "浙江海洋大学2019-2020学年《食品工艺原理》期末考试卷A卷标准参考答案与评分要点。",
+        contributor: "浙海大学子",
+        updateTime: "2020-01-12",
+        localUrl: "js/Exam-Resources/食品工艺原理/2019-2020 A18食工食品工艺原理课程期末考试卷A答案.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/食品工艺原理/2019-2020 A18食工食品工艺原理课程期末考试卷A答案.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/食品工艺原理/2019-2020 A18食工食品工艺原理课程期末考试卷A答案.pdf", isDirect: true }
+        ]
+      }
+    ]
+  },
+  {
+    id: "food-chem",
+    name: "食品化学",
+    title: "《食品化学》",
+    icon: "🧪",
+    type: "食品专业核心课",
+    description: "按年份从新至旧整理的浙江海洋大学《食品化学》历年期末统考真题试卷空白卷及参考答案PDF原件合集（涵盖2020-2021、2019-2020学年）。",
+    papers: [
+      // ----------- 2020-2021 学年 -----------
+      {
+        id: "fc-exam-2020-2021-a",
+        title: "2020-2021学年《食品化学》期末统考试卷A卷 (空白卷)",
+        tag: "期末真题",
+        year: "2020-2021",
+        fileType: "pdf",
+        fileSize: "259 KB",
+        description: "浙江海洋大学2020-2021学年《食品化学》期末统考真题试卷A卷空白原件PDF，包含水分、蛋白质、碳水化合物、脂类等食品化学核心大题与判断题。",
+        contributor: "浙海大学子",
+        updateTime: "2021-01-15",
+        localUrl: "js/Exam-Resources/食品化学/2020-2021《食品化学》期末试卷A空白卷--2020-2021.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/食品化学/2020-2021《食品化学》期末试卷A空白卷--2020-2021.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/食品化学/2020-2021《食品化学》期末试卷A空白卷--2020-2021.pdf", isDirect: true }
+        ]
+      },
+      {
+        id: "fc-exam-2020-2021-b",
+        title: "2020-2021学年《食品化学》期末统考试卷B卷 (空白卷)",
+        tag: "期末真题",
+        year: "2020-2021",
+        fileType: "pdf",
+        fileSize: "263 KB",
+        description: "浙江海洋大学2020-2021学年《食品化学》期末统考真题试卷B卷空白原件PDF。",
+        contributor: "浙海大学子",
+        updateTime: "2021-01-15",
+        localUrl: "js/Exam-Resources/食品化学/2020-2021《食品化学》期末试卷B空白卷--2020-2021.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/食品化学/2020-2021《食品化学》期末试卷B空白卷--2020-2021.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/食品化学/2020-2021《食品化学》期末试卷B空白卷--2020-2021.pdf", isDirect: true }
+        ]
+      },
+
+      // ----------- 2019-2020 学年 -----------
+      {
+        id: "fc-exam-2019-2020-a",
+        title: "2019-2020学年《食品化学》期末考试卷(A卷)",
+        tag: "期末真题",
+        year: "2019-2020",
+        fileType: "pdf",
+        fileSize: "333 KB",
+        description: "浙江海洋大学2019-2020学年《食品化学》期末统考真题试卷A卷PDF原件。",
+        contributor: "浙海大学子",
+        updateTime: "2020-01-12",
+        localUrl: "js/Exam-Resources/食品化学/2019-2020《食品化学》考试卷（A）.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/食品化学/2019-2020《食品化学》考试卷（A）.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/食品化学/2019-2020《食品化学》考试卷（A）.pdf", isDirect: true }
+        ]
+      },
+      {
+        id: "fc-exam-2019-2020-ans-b",
+        title: "2019-2020学年《食品化学》考试卷(B卷) 参考答案",
+        tag: "参考答案",
+        year: "2019-2020",
+        fileType: "pdf",
+        fileSize: "297 KB",
+        description: "浙江海洋大学2019-2020学年《食品化学》期末考试卷B卷标准参考答案与考点解析。",
+        contributor: "浙海大学子",
+        updateTime: "2020-01-12",
+        localUrl: "js/Exam-Resources/食品化学/2019-2020《食品化学》考试卷（B）答案.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/食品化学/2019-2020《食品化学》考试卷（B）答案.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/食品化学/2019-2020《食品化学》考试卷（B）答案.pdf", isDirect: true }
+        ]
+      }
+    ]
   }
 ];
 
@@ -984,6 +1249,32 @@ const COURSE_SUBJECTS = [
         links: [
           { platform: "本地 HTML 在线题目与答案", url: "js/Subjects-Resources/数据结构/数据结构 作业10-ANSWER.html", isDirect: true },
           { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Subjects-Resources/数据结构/数据结构 作业10-ANSWER.html", isDirect: true }
+        ]
+      }
+    ]
+  },
+  {
+    id: "food-chem-course",
+    name: "食品化学",
+    title: "《食品化学》",
+    icon: "🧪",
+    type: "专业核心课程",
+    description: "涵盖《食品化学》期末复习提纲与核心考点归纳PDF文档（水分、蛋白质、碳水化合物、脂类、酶等）。",
+    papers: [
+      {
+        id: "food-chem-001",
+        title: "食品化学复习提纲与考点梳理",
+        tag: "PDF源文件",
+        year: "食品化学",
+        fileType: "pdf",
+        fileSize: "365 KB",
+        description: "源文件：食品化学.pdf。涵盖水分活度、碳水化合物反应、蛋白质变性与功能性质、脂质氧化、酶促褐变、维生素与矿物质等全书核心考点梳理。",
+        contributor: "浙海大学子",
+        updateTime: "2024-01-10",
+        localUrl: "js/Subjects-Resources/食品化学/食品化学.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Subjects-Resources/食品化学/食品化学.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Subjects-Resources/食品化学/食品化学.pdf", isDirect: true }
         ]
       }
     ]
