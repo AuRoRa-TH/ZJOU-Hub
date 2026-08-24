@@ -812,6 +812,203 @@ const EXAM_SUBJECTS = [
         ]
       }
     ]
+  },
+  {
+    id: "inorganic-chem",
+    name: "无机及分析化学",
+    title: "《无机及分析化学》",
+    icon: "⚗️",
+    type: "基础化学必修课",
+    description: "按年份整理的浙江海洋大学《无机及分析化学》历年期末统考真题试卷PDF原件合集（涵盖2020-2021学年）。",
+    papers: [
+      // ----------- 2020-2021 学年 -----------
+      {
+        id: "iac-2020-2021-b2-a",
+        title: "2020-2021学年《无机及分析化学B2》期末考试卷(A卷)",
+        tag: "期末真题",
+        year: "2020-2021",
+        fileType: "pdf",
+        fileSize: "242 KB",
+        description: "浙江海洋大学2020-2021学年第二学期《无机及分析化学B2》期末统考真题试卷A卷PDF原件，包含化学平衡、酸碱滴定、配位平衡、氧化还原等考点大题。",
+        contributor: "浙海大学子",
+        updateTime: "2021-06-20",
+        localUrl: "js/Exam-Resources/无机及分析化学/2020-2021 《无机及分析化学B2》 A卷(1).pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/无机及分析化学/2020-2021 《无机及分析化学B2》 A卷(1).pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/无机及分析化学/2020-2021 《无机及分析化学B2》 A卷(1).pdf", isDirect: true }
+        ]
+      },
+      {
+        id: "iac-2020-2021-b2-b",
+        title: "2020-2021学年《无机及分析化学B2》期末考试卷(B卷)",
+        tag: "期末真题",
+        year: "2020-2021",
+        fileType: "pdf",
+        fileSize: "1.2 MB",
+        description: "浙江海洋大学2020-2021学年第二学期《无机及分析化学B2》期末统考真题试卷B卷PDF原件。",
+        contributor: "浙海大学子",
+        updateTime: "2021-06-20",
+        localUrl: "js/Exam-Resources/无机及分析化学/2020-2021《无机及分析化学B2》B卷.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/无机及分析化学/2020-2021《无机及分析化学B2》B卷.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/无机及分析化学/2020-2021《无机及分析化学B2》B卷.pdf", isDirect: true }
+        ]
+      }
+    ]
+  },
+  {
+    id: "aquatic-food",
+    name: "水产食品学",
+    title: "《水产食品学》",
+    icon: "🐟",
+    type: "水产/食品专业核心课",
+    description: "按年份从新至旧整理的浙江海洋大学《水产食品学》历年期末统考真题试卷及标准参考答案PDF原件合集（涵盖2022-2023、2021-2022学年）。",
+    papers: [
+      // ----------- 2022-2023 学年 -----------
+      {
+        id: "af-2022-2023-19b",
+        title: "2022-2023学年《水产食品学》期末考试卷（19B）",
+        tag: "期末真题",
+        year: "2022-2023",
+        fileType: "pdf",
+        fileSize: "252 KB",
+        description: "浙江海洋大学2022-2023学年《水产食品学》期末统考真题试卷19B卷PDF原件，适用专业班级：19水产养殖/食品等专业。",
+        contributor: "浙海大学子",
+        updateTime: "2023-01-10",
+        localUrl: "js/Exam-Resources/水产食品学/2022-2023 19B《水产食品学》.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/水产食品学/2022-2023 19B《水产食品学》.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/水产食品学/2022-2023 19B《水产食品学》.pdf", isDirect: true }
+        ]
+      },
+      {
+        id: "af-2022-2023-19b-ans",
+        title: "2022-2023学年《水产食品学》期末考试卷（19B）参考答案",
+        tag: "参考答案",
+        year: "2022-2023",
+        fileType: "pdf",
+        fileSize: "196 KB",
+        description: "浙江海洋大学2022-2023学年《水产食品学》期末考试19B卷标准参考答案与评分要点解析。",
+        contributor: "浙海大学子",
+        updateTime: "2023-01-10",
+        localUrl: "js/Exam-Resources/水产食品学/2022-2023 19B答案《水产食品学》.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/水产食品学/2022-2023 19B答案《水产食品学》.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/水产食品学/2022-2023 19B答案《水产食品学》.pdf", isDirect: true }
+        ]
+      },
+
+      // ----------- 2021-2022 学年 -----------
+      {
+        id: "af-2021-2022-17a-ans",
+        title: "2021-2022学年《水产食品学》期末考试卷（17A）参考答案",
+        tag: "参考答案",
+        year: "2021-2022",
+        fileType: "pdf",
+        fileSize: "253 KB",
+        description: "浙江海洋大学2021-2022学年《水产食品学》期末考试17A卷标准参考答案与得分要点。",
+        contributor: "浙海大学子",
+        updateTime: "2022-01-12",
+        localUrl: "js/Exam-Resources/水产食品学/2021-2022 17A答案《水产食品学》.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/水产食品学/2021-2022 17A答案《水产食品学》.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/水产食品学/2021-2022 17A答案《水产食品学》.pdf", isDirect: true }
+        ]
+      },
+      {
+        id: "af-2021-2022-17b-ans",
+        title: "2021-2022学年《水产食品学》期末考试卷（17B）参考答案",
+        tag: "参考答案",
+        year: "2021-2022",
+        fileType: "pdf",
+        fileSize: "228 KB",
+        description: "浙江海洋大学2021-2022学年《水产食品学》期末考试17B卷标准参考答案与得分要点分析。",
+        contributor: "浙海大学子",
+        updateTime: "2022-01-12",
+        localUrl: "js/Exam-Resources/水产食品学/2021-2022 17B答案《水产食品学》.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/水产食品学/2021-2022 17B答案《水产食品学》.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/水产食品学/2021-2022 17B答案《水产食品学》.pdf", isDirect: true }
+        ]
+      }
+    ]
+  },
+  {
+    id: "marine-bio-process",
+    name: "海洋生物资源综合利用工艺学",
+    title: "《海洋生物资源综合利用工艺学》",
+    icon: "🌊",
+    type: "海洋/食品专业特色课",
+    description: "按年份从新至旧整理的浙江海洋大学《海洋生物资源综合利用工艺学》历年期末统考参考答案PDF原件合集（涵盖2022-2023、2021-2022学年）。",
+    papers: [
+      // ----------- 2022-2023 学年 -----------
+      {
+        id: "mbp-2022-2023-20a-ans",
+        title: "2022-2023学年《海洋生物资源综合利用工艺学》期末考试（20A）参考答案",
+        tag: "参考答案",
+        year: "2022-2023",
+        fileType: "pdf",
+        fileSize: "252 KB",
+        description: "浙江海洋大学2022-2023学年《海洋生物资源综合利用工艺学》期末统考20A卷标准参考答案与评分要点解析。",
+        contributor: "浙海大学子",
+        updateTime: "2023-01-10",
+        localUrl: "js/Exam-Resources/海洋生物资源综合利用工艺学/2022-2023 20A答案《海洋生物资源综合利用工艺学》.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/海洋生物资源综合利用工艺学/2022-2023 20A答案《海洋生物资源综合利用工艺学》.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/海洋生物资源综合利用工艺学/2022-2023 20A答案《海洋生物资源综合利用工艺学》.pdf", isDirect: true }
+        ]
+      },
+      {
+        id: "mbp-2022-2023-20b-ans",
+        title: "2022-2023学年《海洋生物资源综合利用工艺学》期末考试（20B）参考答案",
+        tag: "参考答案",
+        year: "2022-2023",
+        fileType: "pdf",
+        fileSize: "264 KB",
+        description: "浙江海洋大学2022-2023学年《海洋生物资源综合利用工艺学》期末统考20B卷标准参考答案与评分要点解析。",
+        contributor: "浙海大学子",
+        updateTime: "2023-01-10",
+        localUrl: "js/Exam-Resources/海洋生物资源综合利用工艺学/2022-2023 20B答案《海洋生物资源综合利用工艺学》.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/海洋生物资源综合利用工艺学/2022-2023 20B答案《海洋生物资源综合利用工艺学》.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/海洋生物资源综合利用工艺学/2022-2023 20B答案《海洋生物资源综合利用工艺学》.pdf", isDirect: true }
+        ]
+      },
+
+      // ----------- 2021-2022 学年 -----------
+      {
+        id: "mbp-2021-2022-19a-ans",
+        title: "2021-2022学年《海洋生物资源综合利用工艺学》期末考试（19A）参考答案",
+        tag: "参考答案",
+        year: "2021-2022",
+        fileType: "pdf",
+        fileSize: "253 KB",
+        description: "浙江海洋大学2021-2022学年《海洋生物资源综合利用工艺学》期末统考19A卷标准参考答案与得分要点分析。",
+        contributor: "浙海大学子",
+        updateTime: "2022-01-12",
+        localUrl: "js/Exam-Resources/海洋生物资源综合利用工艺学/2021-2022 19A答案《海洋生物资源综合利用工艺学》.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/海洋生物资源综合利用工艺学/2021-2022 19A答案《海洋生物资源综合利用工艺学》.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/海洋生物资源综合利用工艺学/2021-2022 19A答案《海洋生物资源综合利用工艺学》.pdf", isDirect: true }
+        ]
+      },
+      {
+        id: "mbp-2021-2022-19b-ans",
+        title: "2021-2022学年《海洋生物资源综合利用工艺学》期末考试（19B）参考答案",
+        tag: "参考答案",
+        year: "2021-2022",
+        fileType: "pdf",
+        fileSize: "228 KB",
+        description: "浙江海洋大学2021-2022学年《海洋生物资源综合利用工艺学》期末统考19B卷标准参考答案与得分要点分析。",
+        contributor: "浙海大学子",
+        updateTime: "2022-01-12",
+        localUrl: "js/Exam-Resources/海洋生物资源综合利用工艺学/2021-2022 19B答案《海洋生物资源综合利用工艺学》.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/海洋生物资源综合利用工艺学/2021-2022 19B答案《海洋生物资源综合利用工艺学》.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/海洋生物资源综合利用工艺学/2021-2022 19B答案《海洋生物资源综合利用工艺学》.pdf", isDirect: true }
+        ]
+      }
+    ]
   }
 ];
 
