@@ -178,15 +178,20 @@
 
         const isPdf = (paper.fileType || '').toLowerCase() === 'pdf';
         const isHtml = (paper.fileType || '').toLowerCase() === 'html';
-        const openText = isPdf ? '📄 查阅 PDF 原件' : (isHtml ? '🌐 在线打开真题网页' : '📥 下载源文件');
+        const isFolder = !!paper.isFolder || !!paper.subPageUrl;
+
+        let openText = isPdf ? '📄 查阅 PDF 原件' : (isHtml ? '🌐 在线打开真题网页' : '📥 下载源文件');
+        if (isFolder) {
+          openText = `📂 进入该年份试卷题库 (共 ${paper.itemCount || '多'} 份) ➔`;
+        }
 
         return `
-          <div class="paper-item-module" id="paper-${paper.id}" onclick="openPaperDirect('${paper.id}')" title="点击直接查阅此试卷原件">
+          <div class="paper-item-module" id="paper-${paper.id}" onclick="openPaperDirect('${paper.id}')" title="${isFolder ? '点击进入该年份全部试卷资料' : '点击直接查阅此试卷原件'}">
             <div class="paper-item-top">
               <div class="paper-item-badges">
                 <span class="paper-index-badge">第 ${index + 1} 项</span>
                 <span class="badge-tag exam">${paper.tag}</span>
-                <span class="filetype-text">${paper.fileType.toUpperCase()} · ${paper.fileSize}</span>
+                <span class="filetype-text">${isFolder ? `合集 · ${paper.fileSize}` : `${paper.fileType.toUpperCase()} · ${paper.fileSize}`}</span>
               </div>
               <span class="paper-item-year">📅 ${paper.year}年统考</span>
             </div>
@@ -200,18 +205,22 @@
                 <span>🕒 更新: ${paper.updateTime}</span>
               </div>
               <div class="paper-action-btns">
-                ${paper.localUrl ? `
+                ${isFolder ? `
+                  <a href="${paper.subPageUrl}" class="btn-download" style="background: #0284c7;" onclick="event.stopPropagation();" title="进入该年份全部试卷资料">
+                    ${openText}
+                  </a>
+                ` : (paper.localUrl ? `
                   <a href="${encodeURI(paper.localUrl)}" target="_blank" class="btn-download" style="background: #0284c7;" onclick="event.stopPropagation();" title="直接在浏览器中打开此试卷">
                     ${openText}
                   </a>
-                ` : ''}
+                ` : '')}
                 ${hasCode ? `
                   <button class="btn-copy-code" onclick="copyCode('${primaryLink.code}', event)">
                     🔑 提取码: ${primaryLink.code}
                   </button>
                 ` : ''}
                 <button class="btn-download" onclick="openPaperModal('${paper.id}', event)">
-                  <span>下载通道</span> ➔
+                  <span>${isFolder ? '合集通道' : '下载通道'}</span> ➔
                 </button>
               </div>
             </div>
@@ -370,6 +379,11 @@
       const paper = currentSubject.papers.find(p => p.id === paperId);
       if (!paper) return;
 
+      if (paper.subPageUrl) {
+        window.location.href = paper.subPageUrl;
+        return;
+      }
+
       const targetUrl = paper.localUrl || (paper.links && paper.links[0] ? paper.links[0].url : null);
       if (targetUrl) {
         window.open(encodeURI(targetUrl), '_blank');
@@ -397,7 +411,10 @@
         </div>
 
         <div class="modal-links-list">
-          ${paper.links.map(link => `
+          ${paper.links.map(link => {
+            const isExternal = link.url.startsWith('http');
+            const targetAttr = isExternal ? 'target="_blank" rel="noopener noreferrer"' : '';
+            return `
             <div class="modal-link-item">
               <div>
                 <span class="link-name">${link.platform}</span>
@@ -407,12 +424,13 @@
                 ${link.code ? `
                   <button class="btn-copy-code" onclick="copyCode('${link.code}')">复制提取码</button>
                 ` : ''}
-                <a href="${encodeURI(link.url)}" target="_blank" rel="noopener noreferrer" class="btn-download" style="padding: 6px 14px; font-size: 0.84rem;">
+                <a href="${encodeURI(link.url)}" ${targetAttr} class="btn-download" style="padding: 6px 14px; font-size: 0.84rem;">
                   前往直达 ➔
                 </a>
               </div>
             </div>
-          `).join('')}
+          `;
+          }).join('')}
         </div>
 
         <div style="font-size: 0.78rem; color: var(--text-muted); text-align: center; margin-top: 16px;">

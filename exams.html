@@ -119,6 +119,7 @@
       }
 
       container.innerHTML = subjects.map((subject, index) => {
+        const paperCount = subject.papers ? subject.papers.reduce((sum, p) => sum + (p.itemCount || 1), 0) : 0;
         return `
           <div class="subject-card-module" id="subject-card-${subject.id}" onclick="location.href='exam-subject.html?id=${subject.id}'" title="点击进入《${subject.name}》期末试卷库">
             <div class="subject-card-left">
@@ -134,7 +135,7 @@
             </div>
 
             <div class="subject-card-right">
-              <span class="subject-papers-count">已收录 ${subject.papers ? subject.papers.length : 0} 份资料</span>
+              <span class="subject-papers-count">已收录 ${paperCount} 份资料</span>
               <a href="exam-subject.html?id=${subject.id}" class="btn-subject-enter" onclick="event.stopPropagation();">
                 <span>进入试卷库</span> ➔
               </a>
@@ -175,7 +176,7 @@
                   <span style="font-size: 1.2rem;">${subject.icon || '📑'}</span>
                   <span class="suggest-title">${highlightKeyword(subject.title, query)}</span>
                 </div>
-                <span class="suggest-year">${subject.papers ? subject.papers.length : 0} 份试卷</span>
+                <span class="suggest-year">${subject.papers ? subject.papers.reduce((sum, p) => sum + (p.itemCount || 1), 0) : 0} 份试卷</span>
               </div>
             `).join('')}
           `;

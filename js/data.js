@@ -505,18 +505,21 @@ const EXAM_SUBJECTS = [
       // ----------- 2024-2025 学年 -----------
       {
         id: "db-2024-2025-1-a",
-        title: "2024-2025学年第一学期《数据库原理及应用》期末考试（A卷）判断与综合题库",
-        tag: "期末真题",
+        title: "2024-2025学年第一学期《数据库原理及应用》期末考试（A卷）真题与题库合集",
+        tag: "期末真题合集",
         year: "2024-2025",
         fileType: "html",
-        fileSize: "618 KB",
-        description: "2024-2025学年第一学期《数据库原理及应用》期末考试真题（A卷）完整网页版试卷与判断题库，适用专业班级：A23数科1、2班。",
+        fileSize: "8 份真题题库",
+        itemCount: 8,
+        isFolder: true,
+        subPageUrl: "exam-papers.html?id=db-2024-2025",
+        description: "2024-2025学年第一学期《数据库原理及应用》期末考试（A卷）真题试卷全套合集（包含判断题、单选题与6道SQL操作大题共8份完整题库），适用专业班级：A23数科1、2班。",
         contributor: "浙海大学子",
         updateTime: "2025-01-10",
-        localUrl: "js/Exam-Resources/数据库/True or False - Problem List - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html",
+        localUrl: "exam-papers.html?id=db-2024-2025",
         links: [
-          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据库/True or False - Problem List - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html", isDirect: true },
-          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/数据库/True or False - Problem List - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html", isDirect: true }
+          { platform: "进入 2024-2025 试卷题库专区 (共8份)", url: "exam-papers.html?id=db-2024-2025", isDirect: true },
+          { platform: "GitHub 仓库原文件目录", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/tree/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E5%BA%93/2024-2025%20%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7", isDirect: true }
         ]
       }
     ]
@@ -532,18 +535,21 @@ const EXAM_SUBJECTS = [
       // ----------- 2024-2025 学年 -----------
       {
         id: "ds-2024-2025-1-a",
-        title: "2024-2025学年第一学期《数据结构》期末考试真题与题库（A23数科1、2班）",
-        tag: "期末真题",
+        title: "2024-2025学年第一学期《数据结构》期末考试真题与题库合集（A23数科1、2班）",
+        tag: "期末真题合集",
         year: "2024-2025",
         fileType: "html",
-        fileSize: "570 KB",
-        description: "2024-2025学年第一学期《数据结构》期末统考真题判断与核心大题完整网页版试卷，适用专业班级：A23数科1、2班。",
+        fileSize: "7 份真题题库",
+        itemCount: 7,
+        isFolder: true,
+        subPageUrl: "exam-papers.html?id=ds-2024-2025",
+        description: "2024-2025学年第一学期《数据结构》期末统考真题完整试卷合集，包含判断题、单选题、填空题、程序填空题、函数题与编程大题（共7项），适用专业班级：A23数科1、2班。",
         contributor: "浙海大学子",
         updateTime: "2025-01-10",
-        localUrl: "js/Exam-Resources/数据结构/True or False - Problem List - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html",
+        localUrl: "exam-papers.html?id=ds-2024-2025",
         links: [
-          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据结构/True or False - Problem List - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html", isDirect: true },
-          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/数据结构/True or False - Problem List - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html", isDirect: true }
+          { platform: "进入 2024-2025 试卷题库专区 (共7份)", url: "exam-papers.html?id=ds-2024-2025", isDirect: true },
+          { platform: "GitHub 仓库原文件目录", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/tree/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2024-2025%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7", isDirect: true }
         ]
       }
     ]
@@ -1099,6 +1105,287 @@ const EXAM_SUBJECTS = [
         links: [
           { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/海洋生物资源综合利用工艺学/2021-2022 19B答案《海洋生物资源综合利用工艺学》.pdf", isDirect: true },
           { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/海洋生物资源综合利用工艺学/2021-2022 19B答案《海洋生物资源综合利用工艺学》.pdf", isDirect: true }
+        ]
+      }
+    ]
+  }
+];
+
+// ================= 1.1 年份期末真题与题库子集数据体系 (二级跳转专区) =================
+const EXAM_YEAR_GROUPS = [
+  // -------------------------------------------------------------
+  // 数据结构 2024-2025 学年期末考试合集（A23数科1、2班）共 7 项
+  // -------------------------------------------------------------
+  {
+    id: "ds-2024-2025",
+    subjectId: "ds",
+    subjectName: "数据结构",
+    subjectTitle: "《数据结构》",
+    subjectIcon: "🌲",
+    subjectType: "计算机/数据科学核心必修课",
+    year: "2024-2025",
+    title: "2024-2025学年第一学期《数据结构》期末考试真题与题库合集",
+    badge: "A23数科1、2班 · PTA原版真题题库与编程大题",
+    description: "按年份整理的浙江海洋大学《数据结构》期末统考真题网页原件，涵盖判断题、单选题、填空题、程序填空题、函数题与编程大题共 7 项完整题库。点击下方任意题目即可在线直阅或下载。",
+    folderName: "2024-2025 数据结构期末考试A卷",
+    papers: [
+      {
+        id: "ds-2024-tf",
+        title: "判断题题库 (True or False) - 2024-2025-1 《数据结构》期末考试 A23数科1、2",
+        tag: "判断题",
+        year: "2024-2025",
+        fileType: "html",
+        fileSize: "569 KB",
+        description: "2024-2025学年第一学期《数据结构》期末统考判断题全套题库，涵盖数据结构基本概念、时间复杂度、二叉树与图结构正误辨析。适用专业班级：A23数科1、2班。",
+        contributor: "浙海大学子",
+        updateTime: "2025-01-10",
+        localUrl: "js/Exam-Resources/数据结构/2024-2025 数据结构期末考试A卷/True or False - Problem List - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html",
+        links: [
+          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据结构/2024-2025 数据结构期末考试A卷/True or False - Problem List - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2024-2025%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7/True%20or%20False%20-%20Problem%20List%20-%202024-2025-1%20%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%8B%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20A23%E6%95%B0%E7%A7%911%E3%80%812.html", isDirect: true }
+        ]
+      },
+      {
+        id: "ds-2024-mc",
+        title: "单选题题库 (Multiple Choice) - 2024-2025-1 《数据结构》期末考试 A23数科1、2",
+        tag: "单选题",
+        year: "2024-2025",
+        fileType: "html",
+        fileSize: "678 KB",
+        description: "2024-2025学年第一学期《数据结构》期末统考单选题题库，涵盖线性表、栈与队列、二叉树遍历、散列表、图算法等核心考点。适用专业班级：A23数科1、2班。",
+        contributor: "浙海大学子",
+        updateTime: "2025-01-10",
+        localUrl: "js/Exam-Resources/数据结构/2024-2025 数据结构期末考试A卷/Multiple Choice - Problem List - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html",
+        links: [
+          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据结构/2024-2025 数据结构期末考试A卷/Multiple Choice - Problem List - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2024-2025%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7/Multiple%20Choice%20-%20Problem%20List%20-%202024-2025-1%20%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%8B%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20A23%E6%95%B0%E7%A7%911%E3%80%812.html", isDirect: true }
+        ]
+      },
+      {
+        id: "ds-2024-blank",
+        title: "填空题题库 (Fill in Blank) - 2024-2025-1 《数据结构》期末考试 A23数科1、2",
+        tag: "填空题",
+        year: "2024-2025",
+        fileType: "html",
+        fileSize: "566 KB",
+        description: "2024-2025学年第一学期《数据结构》期末统考常规填空题题库，适用专业班级：A23数科1、2班。",
+        contributor: "浙海大学子",
+        updateTime: "2025-01-10",
+        localUrl: "js/Exam-Resources/数据结构/2024-2025 数据结构期末考试A卷/Fill in Blank - Problem List - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html",
+        links: [
+          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据结构/2024-2025 数据结构期末考试A卷/Fill in Blank - Problem List - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2024-2025%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7/Fill%20in%20Blank%20-%20Problem%20List%20-%202024-2025-1%20%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%8B%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20A23%E6%95%B0%E7%A7%911%E3%80%812.html", isDirect: true }
+        ]
+      },
+      {
+        id: "ds-2024-progblank",
+        title: "程序填空题库 (Fill in Blank for Programming) - 2024-2025-1 《数据结构》期末考试 A23数科1、2",
+        tag: "程序填空题",
+        year: "2024-2025",
+        fileType: "html",
+        fileSize: "563 KB",
+        description: "2024-2025学年第一学期《数据结构》期末统考程序填空题（关键核心算法代码填空），适用专业班级：A23数科1、2班。",
+        contributor: "浙海大学子",
+        updateTime: "2025-01-10",
+        localUrl: "js/Exam-Resources/数据结构/2024-2025 数据结构期末考试A卷/Fill in Blank for Programming - Problem List - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html",
+        links: [
+          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据结构/2024-2025 数据结构期末考试A卷/Fill in Blank for Programming - Problem List - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2024-2025%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7/Fill%20in%20Blank%20for%20Programming%20-%20Problem%20List%20-%202024-2025-1%20%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%8B%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20A23%E6%95%B0%E7%A7%911%E3%80%812.html", isDirect: true }
+        ]
+      },
+      {
+        id: "ds-2024-r6-1",
+        title: "R6-1 两个有序链表序列的合并 - 2024-2025-1 《数据结构》期末考试 A23数科1、2",
+        tag: "函数题",
+        year: "2024-2025",
+        fileType: "html",
+        fileSize: "595 KB",
+        description: "2024-2025学年第一学期《数据结构》期末统考函数题：实现两个递增有序链表序列的原地非递减合并算法，适用专业班级：A23数科1、2班。",
+        contributor: "浙海大学子",
+        updateTime: "2025-01-10",
+        localUrl: "js/Exam-Resources/数据结构/2024-2025 数据结构期末考试A卷/R6-1 两个有序链表序列的合并 - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html",
+        links: [
+          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据结构/2024-2025 数据结构期末考试A卷/R6-1 两个有序链表序列的合并 - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2024-2025%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7/R6-1%20%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8%E5%BA%8F%E5%88%97%E7%9A%84%E5%90%88%E5%B9%B6%20-%202024-2025-1%20%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%8B%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20A23%E6%95%B0%E7%A7%911%E3%80%812.html", isDirect: true }
+        ]
+      },
+      {
+        id: "ds-2024-r7-1",
+        title: "R7-1 寻找大富翁 - 2024-2025-1 《数据结构》期末考试 A23数科1、2",
+        tag: "编程题",
+        year: "2024-2025",
+        fileType: "html",
+        fileSize: "585 KB",
+        description: "2024-2025学年第一学期《数据结构》期末统考编程大题：Top-K 寻找大富翁（高效堆结构或快排划分思想实现），适用专业班级：A23数科1、2班。",
+        contributor: "浙海大学子",
+        updateTime: "2025-01-10",
+        localUrl: "js/Exam-Resources/数据结构/2024-2025 数据结构期末考试A卷/R7-1 寻找大富翁 - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html",
+        links: [
+          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据结构/2024-2025 数据结构期末考试A卷/R7-1 寻找大富翁 - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2024-2025%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7/R7-1%20%E5%AF%BB%E6%89%BE%E5%A4%A7%E5%AF%8C%E7%BF%81%20-%202024-2025-1%20%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%8B%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20A23%E6%95%B0%E7%A7%911%E3%80%812.html", isDirect: true }
+        ]
+      },
+      {
+        id: "ds-2024-r7-2",
+        title: "R7-2 数组循环左移 - 2024-2025-1 《数据结构》期末考试 A23数科1、2",
+        tag: "编程题",
+        year: "2024-2025",
+        fileType: "html",
+        fileSize: "586 KB",
+        description: "2024-2025学年第一学期《数据结构》期末统考编程大题：一维数组循环左移算法实现（三步翻转法或模运算），适用专业班级：A23数科1、2班。",
+        contributor: "浙海大学子",
+        updateTime: "2025-01-10",
+        localUrl: "js/Exam-Resources/数据结构/2024-2025 数据结构期末考试A卷/R7-2 数组循环左移 - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html",
+        links: [
+          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据结构/2024-2025 数据结构期末考试A卷/R7-2 数组循环左移 - 2024-2025-1 《数据结构》期末考试 A23数科1、2.html", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2024-2025%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7/R7-2%20%E6%95%B0%E7%BB%84%E5%BE%AA%E7%8E%AF%E5%B7%A6%E7%A7%BB%20-%202024-2025-1%20%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%8B%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20A23%E6%95%B0%E7%A7%911%E3%80%812.html", isDirect: true }
+        ]
+      }
+    ]
+  },
+
+  // -------------------------------------------------------------
+  // 数据库 2024-2025 学年期末考试合集（A23数科1、2班）共 9 项
+  // -------------------------------------------------------------
+  {
+    id: "db-2024-2025",
+    subjectId: "db",
+    subjectName: "数据库",
+    subjectTitle: "《数据库原理及应用》",
+    subjectIcon: "🗄️",
+    subjectType: "计算机/数据科学核心必修课",
+    year: "2024-2025",
+    title: "2024-2025学年第一学期《数据库原理及应用》期末考试（A卷）真题与题库合集",
+    badge: "A23数科1、2班 · PTA原版真题题库与SQL大题",
+    description: "按年份整理的浙江海洋大学《数据库原理及应用》期末统考（A卷）真题网页原件，涵盖判断题、单选题与 6 道 SQL 操作大题共 8 项完整题库。点击下方任意题目即可在线直阅或下载。",
+    folderName: "2024-2025 数据库期末考试A卷",
+    papers: [
+      {
+        id: "db-2024-tf",
+        title: "判断题题库 (True or False) - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）",
+        tag: "判断题",
+        year: "2024-2025",
+        fileType: "html",
+        fileSize: "633 KB",
+        description: "2024-2025学年第一学期《数据库原理及应用》期末统考（A卷）判断题题库原件，涵盖关系代数、SQL规范、事务与完整性约束正误判断。适用专业班级：A23数科1、2班。",
+        contributor: "浙海大学子",
+        updateTime: "2025-01-10",
+        localUrl: "js/Exam-Resources/数据库/2024-2025 数据库期末考试A卷/True or False - Problem List - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html",
+        links: [
+          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据库/2024-2025 数据库期末考试A卷/True or False - Problem List - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E5%BA%93/2024-2025%20%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7/True%20or%20False%20-%20Problem%20List%20-%202024-2025-1%20A23%E6%95%B0%E7%A7%911%EF%BC%8C2%20%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8%E8%80%83%E8%AF%95%EF%BC%88A%E5%8D%B7%EF%BC%89.html", isDirect: true }
+        ]
+      },
+      {
+        id: "db-2024-mc",
+        title: "单选题题库 (Multiple Choice) - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）",
+        tag: "单选题",
+        year: "2024-2025",
+        fileType: "html",
+        fileSize: "687 KB",
+        description: "2024-2025学年第一学期《数据库原理及应用》期末统考（A卷）单选题题库原件，涵盖关系模型、范式理论（1NF/2NF/3NF/BCNF）、并发控制与锁机制等考点。适用专业班级：A23数科1、2班。",
+        contributor: "浙海大学子",
+        updateTime: "2025-01-10",
+        localUrl: "js/Exam-Resources/数据库/2024-2025 数据库期末考试A卷/Multiple Choice - Problem List - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html",
+        links: [
+          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据库/2024-2025 数据库期末考试A卷/Multiple Choice - Problem List - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E5%BA%93/2024-2025%20%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7/Multiple%20Choice%20-%20Problem%20List%20-%202024-2025-1%20A23%E6%95%B0%E7%A7%911%EF%BC%8C2%20%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8%E8%80%83%E8%AF%95%EF%BC%88A%E5%8D%B7%EF%BC%89.html", isDirect: true }
+        ]
+      },
+      {
+        id: "db-2024-10-1",
+        title: "10-1 查询未登记成绩的学生 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）",
+        tag: "SQL操作题",
+        year: "2024-2025",
+        fileType: "html",
+        fileSize: "564 KB",
+        description: "2024-2025学年第一学期《数据库原理及应用》期末考试（A卷）SQL大题：LEFT JOIN / IS NULL 查询未登记成绩的学生信息。",
+        contributor: "浙海大学子",
+        updateTime: "2025-01-10",
+        localUrl: "js/Exam-Resources/数据库/2024-2025 数据库期末考试A卷/10-1 查询未登记成绩的学生 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html",
+        links: [
+          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据库/2024-2025 数据库期末考试A卷/10-1 查询未登记成绩的学生 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E5%BA%93/2024-2025%20%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7/10-1%20%E6%9F%A5%E8%AF%A2%E6%9C%AA%E7%99%BB%E8%AE%B0%E6%88%90%E7%BB%A9%E7%9A%84%E5%AD%A6%E7%94%9F%20-%202024-2025-1%20A23%E6%95%B0%E7%A7%911%EF%BC%8C2%20%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8%E8%80%83%E8%AF%95%EF%BC%88A%E5%8D%B7%EF%BC%89.html", isDirect: true }
+        ]
+      },
+      {
+        id: "db-2024-10-2",
+        title: "10-2 查询同专业的学生 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）",
+        tag: "SQL操作题",
+        year: "2024-2025",
+        fileType: "html",
+        fileSize: "564 KB",
+        description: "2024-2025学年第一学期《数据库原理及应用》期末考试（A卷）SQL大题：自身连接与分组关联查询同专业学生。",
+        contributor: "浙海大学子",
+        updateTime: "2025-01-10",
+        localUrl: "js/Exam-Resources/数据库/2024-2025 数据库期末考试A卷/10-2 查询同专业的学生 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html",
+        links: [
+          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据库/2024-2025 数据库期末考试A卷/10-2 查询同专业的学生 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E5%BA%93/2024-2025%20%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7/10-2%20%E6%9F%A5%E8%AF%A2%E5%90%8C%E4%B8%93%E4%B8%9A%E7%9A%84%E5%AD%A6%E7%94%9F%20-%202024-2025-1%20A23%E6%95%B0%E7%A7%911%EF%BC%8C2%20%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8%E8%80%83%E8%AF%95%EF%BC%88A%E5%8D%B7%EF%BC%89.html", isDirect: true }
+        ]
+      },
+      {
+        id: "db-2024-10-3",
+        title: "10-3 添加一条学生记录 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）",
+        tag: "SQL操作题",
+        year: "2024-2025",
+        fileType: "html",
+        fileSize: "564 KB",
+        description: "2024-2025学年第一学期《数据库原理及应用》期末考试（A卷）SQL大题：INSERT INTO 规范语句添加学生记录。",
+        contributor: "浙海大学子",
+        updateTime: "2025-01-10",
+        localUrl: "js/Exam-Resources/数据库/2024-2025 数据库期末考试A卷/10-3 添加一条学生记录 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html",
+        links: [
+          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据库/2024-2025 数据库期末考试A卷/10-3 添加一条学生记录 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E5%BA%93/2024-2025%20%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7/10-3%20%E6%B7%BB%E5%8A%A0%E4%B8%80%E6%9D%A1%E5%AD%A6%E7%94%9F%E8%AE%B0%E5%BD%95%20-%202024-2025-1%20A23%E6%95%B0%E7%A7%911%EF%BC%8C2%20%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8%E8%80%83%E8%AF%95%EF%BC%88A%E5%8D%B7%EF%BC%89.html", isDirect: true }
+        ]
+      },
+      {
+        id: "db-2024-10-4",
+        title: "10-4 修改高数不及格的学生成绩 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）",
+        tag: "SQL操作题",
+        year: "2024-2025",
+        fileType: "html",
+        fileSize: "567 KB",
+        description: "2024-2025学年第一学期《数据库原理及应用》期末考试（A卷）SQL大题：UPDATE 条件嵌套子查询更新不及格成绩。",
+        contributor: "浙海大学子",
+        updateTime: "2025-01-10",
+        localUrl: "js/Exam-Resources/数据库/2024-2025 数据库期末考试A卷/10-4 修改高数不及格的学生成绩 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html",
+        links: [
+          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据库/2024-2025 数据库期末考试A卷/10-4 修改高数不及格的学生成绩 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E5%BA%93/2024-2025%20%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7/10-4%20%E4%BF%AE%E6%94%B9%E9%AB%98%E6%95%B0%E4%B8%8D%E5%8F%8A%E6%A0%BC%E7%9A%84%E5%AD%A6%E7%94%9F%E6%88%90%E7%BB%A9%20-%202024-2025-1%20A23%E6%95%B0%E7%A7%911%EF%BC%8C2%20%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8%E8%80%83%E8%AF%95%EF%BC%88A%E5%8D%B7%EF%BC%89.html", isDirect: true }
+        ]
+      },
+      {
+        id: "db-2024-10-5",
+        title: "10-5 计算“0000001”课程的平均分、最高分和最低分 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）",
+        tag: "SQL操作题",
+        year: "2024-2025",
+        fileType: "html",
+        fileSize: "549 KB",
+        description: "2024-2025学年第一学期《数据库原理及应用》期末考试（A卷）SQL大题：AVG、MAX、MIN 聚合函数应用与字段重命名。",
+        contributor: "浙海大学子",
+        updateTime: "2025-01-10",
+        localUrl: "js/Exam-Resources/数据库/2024-2025 数据库期末考试A卷/10-5 计算“0000001”课程的平均分、最高分和最低分 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html",
+        links: [
+          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据库/2024-2025 数据库期末考试A卷/10-5 计算“0000001”课程的平均分、最高分和最低分 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E5%BA%93/2024-2025%20%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7/10-5%20%E8%AE%A1%E7%AE%97%E2%80%9C0000001%E2%80%9D%E8%AF%BE%E7%A8%8B%E7%9A%84%E5%B9%B3%E5%9D%87%E5%88%86%E3%80%81%E6%9C%80%E9%AB%98%E5%88%86%E5%92%8C%E6%9C%80%E4%BD%8E%E5%88%86%20-%202024-2025-1%20A23%E6%95%B0%E7%A7%911%EF%BC%8C2%20%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8%E8%80%83%E8%AF%95%EF%BC%88A%E5%8D%B7%EF%BC%89.html", isDirect: true }
+        ]
+      },
+      {
+        id: "db-2024-10-6",
+        title: "10-6 统计不及格人数超过3人的课程号和人数 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）",
+        tag: "SQL操作题",
+        year: "2024-2025",
+        fileType: "html",
+        fileSize: "565 KB",
+        description: "2024-2025学年第一学期《数据库原理及应用》期末考试（A卷）SQL大题：GROUP BY 分组、HAVING 过滤条件与 COUNT 统计。",
+        contributor: "浙海大学子",
+        updateTime: "2025-01-10",
+        localUrl: "js/Exam-Resources/数据库/2024-2025 数据库期末考试A卷/10-6 统计不及格人数超过3人的课程号和人数 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html",
+        links: [
+          { platform: "本地 HTML 网页真题直阅", url: "js/Exam-Resources/数据库/2024-2025 数据库期末考试A卷/10-6 统计不及格人数超过3人的课程号和人数 - 2024-2025-1 A23数科1，2 数据库原理及应用考试（A卷）.html", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/%E6%95%B0%E6%8D%AE%E5%BA%93/2024-2025%20%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95A%E5%8D%B7/10-6%20%E7%BB%9F%E8%AE%A1%E4%B8%8D%E5%8F%8A%E6%A0%BC%E4%BA%BA%E6%95%B0%E8%B6%85%E8%BF%873%E4%BA%BA%E7%9A%84%E8%AF%BE%E7%A8%8B%E5%8F%B7%E5%92%8C%E4%BA%BA%E6%95%B0%20-%202024-2025-1%20A23%E6%95%B0%E7%A7%911%EF%BC%8C2%20%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8%E8%80%83%E8%AF%95%EF%BC%88A%E5%8D%B7%EF%BC%89.html", isDirect: true }
         ]
       }
     ]
