@@ -45,7 +45,13 @@
         <div class="hero-poster-container">
           <img 
             id="heroPosterImg" 
-            src="js/icon/Poster.png" 
+            src="js/icon/poster-768.webp"
+            srcset="js/icon/poster-480.webp 480w, js/icon/poster-768.webp 768w"
+            sizes="(max-width: 860px) 100vw, 390px"
+            width="768"
+            height="1024"
+            fetchpriority="high"
+            decoding="async"
             alt="浙江海洋大学" 
             class="hero-poster-img"
           >
@@ -109,7 +115,6 @@
   </footer>
 
   <!-- 脚本加载 -->
-  <script src="js/data.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
