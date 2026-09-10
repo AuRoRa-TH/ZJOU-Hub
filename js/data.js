@@ -1108,6 +1108,33 @@ const EXAM_SUBJECTS = [
         ]
       }
     ]
+  },
+  {
+    id: "instrumental-analysis",
+    name: "仪器分析",
+    title: "《仪器分析》",
+    icon: "🔬",
+    type: "化学/专业核心课",
+    description: "按年份整理的浙江海洋大学《仪器分析》历年期末统考真题试卷PDF原件合集（涵盖2024-2025学年）。",
+    papers: [
+      // ----------- 2024-2025 学年 -----------
+      {
+        id: "ia-2024-2025",
+        title: "2024-2025学年《仪器分析》期末考试卷",
+        tag: "期末真题",
+        year: "2024-2025",
+        fileType: "pdf",
+        fileSize: "848 KB",
+        description: "浙江海洋大学2024-2025学年《仪器分析》期末统考真题试卷PDF原件，涵盖光谱分析、色谱分析、电化学分析等核心考点试题。",
+        contributor: "浙海大学子",
+        updateTime: "2025-01-10",
+        localUrl: "js/Exam-Resources/仪器分析/2024-2025 仪器分析.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/仪器分析/2024-2025 仪器分析.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/仪器分析/2024-2025 仪器分析.pdf", isDirect: true }
+        ]
+      }
+    ]
   }
 ];
 
