@@ -1135,6 +1135,33 @@ const EXAM_SUBJECTS = [
         ]
       }
     ]
+  },
+  {
+    id: "chemical-tech-econ",
+    name: "化工技术经济与管理",
+    title: "《化工技术经济与管理》",
+    icon: "📊",
+    type: "化工/专业核心课",
+    description: "按年份整理的浙江海洋大学《化工技术经济与管理》历年期末统考真题试卷PDF原件合集（涵盖2026-2027学年）。",
+    papers: [
+      // ----------- 2026-2027 学年 -----------
+      {
+        id: "cte-2026-2027-a",
+        title: "2026-2027学年第一学期《化工技术经济与管理》期末考试卷（A卷）",
+        tag: "期末真题",
+        year: "2026-2027",
+        fileType: "pdf",
+        fileSize: "214 KB",
+        description: "浙江海洋大学2026-2027学年第一学期《化工技术经济与管理》课程期末考试试卷（A卷）PDF原件，题型涵盖单选题、多选题、填空题、判断题、简答题及计算题。",
+        contributor: "浙海大学子",
+        updateTime: "2026-11-24",
+        localUrl: "js/Exam-Resources/化工技术经济与管理/化工技术经济与管理期末试卷（A卷）.pdf",
+        links: [
+          { platform: "本地 PDF 原件直阅 / 下载", url: "js/Exam-Resources/化工技术经济与管理/化工技术经济与管理期末试卷（A卷）.pdf", isDirect: true },
+          { platform: "GitHub 仓库源文件", url: "https://github.com/AuRoRa-TH/ZJOU-Hub/blob/main/js/Exam-Resources/化工技术经济与管理/化工技术经济与管理期末试卷（A卷）.pdf", isDirect: true }
+        ]
+      }
+    ]
   }
 ];
 
